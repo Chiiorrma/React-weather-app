@@ -1,6 +1,7 @@
 import React from "react";
 import "./SearchWeather.css";
 import ReactAnimatedWeather from 'react-animated-weather';
+import axios from "axios";
 
 export default function SearchWeather(props) {
   return (
