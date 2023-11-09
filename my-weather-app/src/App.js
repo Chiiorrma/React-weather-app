@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
 
-      <h1>
+      <h1 class="text-center">
         My Weather App
       </h1>
 
