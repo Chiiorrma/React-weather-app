@@ -26,7 +26,7 @@ export default function SearchWeather(props) {
             <ReactAnimatedWeather
               icon='CLEAR_DAY'
               color="goldenrod"
-              size={70}
+              size={80}
               animate={true}
             />
 
@@ -51,7 +51,7 @@ export default function SearchWeather(props) {
               <p> <ReactAnimatedWeather
                 icon='PARTLY_CLOUDY_DAY'
                 color="blue"
-                size={70}
+                size={68}
                 animate={true}
               /></p>
               <p>20°</p>
