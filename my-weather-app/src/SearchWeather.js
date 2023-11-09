@@ -26,23 +26,23 @@ export default function SearchWeather(props) {
             <ReactAnimatedWeather
               icon='CLEAR_DAY'
               color="goldenrod"
-              size={150}
+              size={70}
               animate={true}
             />
 
-            <span class="temperature fs-1">14</span>°C
+            <span class="temperature ">14</span>°C
           </div>
           <div class="col-md-6">
             <div>Percipiation: 80%</div>
             <div>Wind: 4km/h </div>
           </div>
-          <div class="row mt-5">
+          <div className="row mt-5 daily-forcast">
             <div class="col-sm-2">
               Fri
               <p> <ReactAnimatedWeather
                 icon='CLEAR_DAY'
                 color="blue"
-                size={150}
+                size={68}
                 animate={true}
               /></p>
               <p>13°</p>
@@ -51,7 +51,7 @@ export default function SearchWeather(props) {
               <p> <ReactAnimatedWeather
                 icon='PARTLY_CLOUDY_DAY'
                 color="blue"
-                size={150}
+                size={70}
                 animate={true}
               /></p>
               <p>20°</p>
@@ -60,7 +60,7 @@ export default function SearchWeather(props) {
               <p> <ReactAnimatedWeather
                 icon='CLEAR_DAY'
                 color="red"
-                size={150}
+                size={68}
                 animate={true}
               /></p>
               <p>23°</p>
@@ -68,17 +68,17 @@ export default function SearchWeather(props) {
             <div class="col-sm-2">Mon
               <p> <ReactAnimatedWeather
                 icon='CLEAR_DAY'
-                color="yellow"
-                size={150}
+                color="black"
+                size={68}
                 animate={true}
               /></p>
               <p>25°</p>
             </div>
             <div class="col-sm-2">Tues
               <p> <ReactAnimatedWeather
-                icon='CLOUD'
+                icon='CLOUDY'
                 color="green"
-                size={150}
+                size={68}
                 animate={true}
               /></p>
               <p>23°</p>
@@ -87,13 +87,13 @@ export default function SearchWeather(props) {
               <p> <ReactAnimatedWeather
                 icon='RAIN'
                 color="blue"
-                size={150}
+                size={68}
                 animate={true}
               /></p>
               <p>27°</p>
             </div>
           </div>
-          <div><a href="/">Opensource code</a>by Chioma Marycynthia</div>
+          <div class="text-centre"><a href="https://github.com/Chiiorrma/React-weather-app" rel="noreferrer"> Opensource code</a> by Chioma Marycynthia</div>
         </div>
       </div>
     </div>

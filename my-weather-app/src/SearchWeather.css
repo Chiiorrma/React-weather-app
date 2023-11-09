@@ -6,3 +6,15 @@
   border-radius: 5px;
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+
+.SearchWeather .cities p {
+  color: aqua;
+}
+
+.SearchWeather .temperature {
+  font-size: 70px;
+}
+
+.SearchWeather.daily-forcast p {
+  margin-bottom: 10px;
+}
