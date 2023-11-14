@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import axios from "axios";
 
 export default function Weather(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
@@ -15,7 +16,7 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       city: response.data.name,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      icon: response.data.weather[0].icon
     });
   }
 
@@ -33,23 +34,23 @@ export default function Weather(props) {
   function updateCity(event) {
     setCity(event.target.value);
   }
-
-  return (
-    <div className="container">
-      <div class="weather mt-3">
-        <form onsubmit={handleSubmit}>
-          <div class="row">
-            <div class="col-9">
-              <input type="text" placeholder="Enter a city..." autocomplete="off" autofocus="on" class="form-control"
-                onChange={updateCity} />
+  if (weatherData.ready)
+    return (
+      <div className="container">
+        <div className="Weather mt-3">
+          <form onsubmit={handleSubmit}>
+            <div className="row">
+              <div className="col-9">
+                <input type="text" placeholder="Enter a city..." autocomplete="off" autofocus="on" className="form-control"
+                  onChange={updateCity} />
+              </div>
+              <div className="col-3">
+                <input type="submit" value="Search" className="btn btn-primary w-100" />
+              </div>
             </div>
-            <div class="col-3">
-              <input type="submit" value="Search" class="btn btn-primary w-100" />
-            </div>
-          </div>
-        </form>
-        <WeatherInfo data={weatherData} />
+          </form>
+          <WeatherInfo data={weatherData} />
+        </div>
       </div>
-    </div>
-  )
+    )
 }
