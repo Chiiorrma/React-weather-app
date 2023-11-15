@@ -52,5 +52,12 @@ export default function Weather(props) {
           <WeatherInfo data={weatherData} />
         </div>
       </div>
+    );
+  else {
+    return (
+      <div>
+        Loading...
+      </div>
     )
+  }
 }

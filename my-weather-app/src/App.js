@@ -1,10 +1,10 @@
-import React from 'react';
-import Weather from "./Weather";
+import React from "react";
+import Weather from "./Weather.js";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <div className="container">
         <h1 class="text-center">
           My Weather App
