@@ -9,7 +9,7 @@ function App() {
         <h1 className="text-center">
           My Weather App
         </h1>
-        <Weather defaultCity="New York" />
+        <Weather defaultCity="Lagos" />
         <footer><a href="https://github.com/Chiiorrma/React-weather-app" target='_blank' rel='noreferrer'> Open-source code</a> by Chioma Marycynthia</footer>
       </div>
     </div>
