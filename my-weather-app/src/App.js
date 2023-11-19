@@ -6,11 +6,11 @@ function App() {
   return (
     <div className="App" >
       <div className="container">
-        <h1 class="text-center">
+        <h1 className="text-center">
           My Weather App
         </h1>
         <Weather defaultCity="New York" />
-        <footer><a href="/" target='_blank' rel='noreferrer'> Open-source code</a> by Chioma Marycynthia</footer>
+        <footer><a href="https://github.com/Chiiorrma/React-weather-app" target='_blank' rel='noreferrer'> Open-source code</a> by Chioma Marycynthia</footer>
       </div>
     </div>
   );
